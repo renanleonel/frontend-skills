@@ -19,7 +19,7 @@ Font choice, type scale, line-height, measure, wrapping, truncation, numerals, O
 
 **"Display" in a font name means a size-specific cut.** Use the Display variant at large sizes and the Text variant at small sizes (SF Pro, optical-size families).
 
-**Avoid the default-model fonts when direction is open.** Inter as an unexamined default and the LLM-favorite display serifs signal templating; start from Geist, Satoshi, Outfit, Cabinet Grotesk or a brand-appropriate face. Inter is fine when the brief asks for neutral/Linear-style, or for accessibility-first public-sector work. Direction-level taste: anti-slop.md.
+**Avoid the default-model fonts when direction is open.** Inter, Geist and Space Grotesk as unexamined defaults, and the LLM-favorite display serifs, signal templating; start from Satoshi, Outfit, Cabinet Grotesk, General Sans or a brand-appropriate face. Inter is fine when the brief asks for neutral/Linear-style, or for accessibility-first public-sector work. Direction-level taste: anti-slop.md.
 
 **Thin weights are display-only.** Below 18px use weight 400+; weights 100-300 vanish at text sizes and on low-DPI screens. Use them at 28px+ and verify contrast there too.
 

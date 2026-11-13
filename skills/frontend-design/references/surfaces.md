@@ -134,7 +134,7 @@ Check: `outline-slate-*`, `outline-zinc-*`, `outline-neutral-*`, or a border on 
 
 ### Choose and keep one set
 
-**Use one icon library per project and one stroke weight per surface.** Mixed libraries have incompatible stroke and grid conventions. Use the project's existing set (shadcn defaults to Lucide; keep it if already present). In a new project prefer Phosphor, Tabler, Radix Icons or HugeIcons. Never hand-draw icon paths from scratch, and never use emoji or Unicode glyphs as icons. Standardize `strokeWidth` globally.
+**Use one icon library per project and one stroke weight per surface.** Mixed libraries have incompatible stroke and grid conventions. Use the project's existing set (keep Lucide if already present). In a new project, including shadcn ones, swap Lucide for Phosphor, Tabler, Radix Icons or HugeIcons; default Lucide is a template tell. Never hand-draw icon paths from scratch, and never use emoji or Unicode glyphs as icons. Standardize `strokeWidth` globally.
 
 **Use an icon system for brands too.** Brand logos come from Simple Icons or devicon (`simple-icons` npm), and must render in light and dark (single-color via `currentColor` or a theme variable).
 

@@ -85,7 +85,9 @@ These are defaults, not laws: a brief can earn any of them. Reaching for one whi
 - **Section numbers** (`01 / 02 / 03`, `001 · Capabilities`), step labels ("Stage 1"), `01 / 4` image counters. Name the step with a verb ("Install", "Ship") or drop the label.
 - **Split section headers:** big left headline plus small floating right paragraph. Stack headline over body (max 65ch) unless the right column holds something real.
 - **Zigzag repetition.** Max two consecutive image+text splits; across a page of eight sections use at least four layout families, and use each family once.
-- **Bento grids with empty cells or white-on-white text tiles.** N items get N cells; give at least two or three cells real variation (image, tint, pattern).
+- **Bento grid as the default feature section.** Use one only when the items genuinely differ in weight and each cell holds something real (screenshot, live component, data). Never with empty cells or white-on-white text tiles; N items get N cells, and at least two or three cells get real variation (image, tint, pattern).
+- **Three pricing tiers with the middle one badged "Most popular".** Price the product the way it is actually sold: one plan, usage-based, or a comparison table. Real tiers are fine; the Free / Pro / Enterprise triptych by reflex is not.
+- **Checkmark bullet lists** (green ✓ before every feature line). Write fewer, specific lines as plain text or a table; reserve check glyphs for real comparison (has / lacks).
 - **A modal for a task that needs neither interruption nor protected focus.** Use inline or a popover.
 - **Long lists as ten hairlined rows.** For more than five items use grouped chunks, a 2-column grid, tabs, a "view all" disclosure or featured-plus-rest. A `border-t` and `border-b` on every row of a spec table is the laziest layout.
 - **Hero overload.** Max four text elements (optional eyebrow, headline, subtext, CTAs). Headline two lines, subtext about 20 words, CTAs visible without scrolling, top padding about 6rem max. Move trust strips, pricing teasers and tagline-under-CTA below the fold. A 4-line hero headline is a font-size error.
@@ -93,7 +95,9 @@ These are defaults, not laws: a brief can earn any of them. Reaching for one whi
 
 ### Surface habits
 - **Gradient text.** Emphasize with weight or size.
-- **Decorative glass/blur,** neon outer glows, and AI-purple/blue glows. Use inner borders or a tinted soft shadow.
+- **Decorative glass/blur (incl. "liquid glass"),** neon outer glows, and AI-purple/blue glows. Use inner borders or a tinted soft shadow.
+- **Radial orbs and blurred color blobs** floating behind the hero or sections. Background color comes from a committed field, an image, or nothing.
+- **Generic soft drop shadows on everything.** Elevation only where it encodes hierarchy (see `surfaces.md`).
 - **Colored `border-left`/`border-right` over 1px** on cards, callouts, alerts.
 - **Hard offset shadows** (`4px 4px 0`) outside a genuinely neobrutalist look. A zero-offset colored halo is decoration, not depth. Shadows carry an offset and soft blur, tinted to the background hue; no pure-black drop shadow on light surfaces.
 - **Ghost card:** a 1px border under a wide soft shadow. Declare elevation once, border or shadow (see `surfaces.md`).
@@ -102,7 +106,10 @@ These are defaults, not laws: a brief can earn any of them. Reaching for one whi
 - **Monospace as a costume** for "technical". Use it for code, data, measurement.
 - **Decorative lines and grids** (crosshairs, stripes, two-axis grid overlays) with no canvas, map or instrument under them. Textures must come from the subject's world.
 - **Custom cursors.** Hostile to accessibility.
-- **Emoji or Unicode glyphs as icons.** Use one library in one stroke weight (Phosphor, Tabler, Radix, Lucide); never hand-drawn SVG paths for UI icons. Icon craft: `surfaces.md`.
+- **Hover animation on everything:** cards that lift and scale, arrows that nudge right on every CTA, glow on hover. Hover feedback is a color or background shift; movement only where it explains the interaction.
+- **Sparkle icons (✨) to mean "AI".** Name the action ("Summarize", "Draft reply") with a functional icon or none.
+- **Emoji or Unicode glyphs as icons.** Use one library in one stroke weight; never hand-drawn SVG paths for UI icons. Icon craft: `surfaces.md`.
+- **Lucide as the unexamined default.** It is the shadcn/AI-template icon set and reads as such. Prefer Phosphor, Tabler, Radix Icons or HugeIcons in new work; keep Lucide only when an existing project already uses it.
 - **Fake product previews built from styled divs** (fake dashboard, terminal, task list, version footer). Use a real screenshot, a generated image, a live mini component, or editorial photography.
 - **Hand-drawn "sketch" SVG scenes and `feTurbulence` grain** imitating illustration. SVG doing geometry (diagrams, crisp shapes) is fine; SVG imitating a picture is not.
 - **Geometric masks (circle, polygon cutout) faking a photo subject's outline.** Derive a real matte or omit.
@@ -112,12 +119,15 @@ These are defaults, not laws: a brief can earn any of them. Reaching for one whi
 - **Pages without real imagery.** Text-only is not minimalism, it is unfinished. Order: generated section-specific images, then real photography, then labeled placeholder slots plus a list of what the user must supply. Heroes need a real visual, not text over a blob.
 
 ### Typography and color reflexes
-- **Inter-as-display and `Inter + slate-900` as the default.** Fine when the brief asks for neutral/Linear-like or for public-sector. Otherwise pick a face for the product (Geist, Satoshi, Cabinet Grotesk, ABC Diatype, a brand serif).
+- **Inter, Geist or Space Grotesk as the default,** and `Inter + slate-900`. These are the model-default sans faces. Inter is fine when the brief asks for neutral/Linear-like or for public-sector. Otherwise pick a face for the product (Satoshi, Cabinet Grotesk, ABC Diatype, Söhne, General Sans, a brand serif).
 - **Serif because it "feels premium/creative".** That reasoning is the tell. Use a serif only when the brief names one, or the family is genuinely editorial/luxury/heritage and you can say why this serif fits this brand. Fraunces and Instrument Serif are the overused defaults, along with Playfair, Cormorant, Lora, Newsreader and DM Serif; rotate and justify.
 - **Mixed-family emphasis** (one serif word inside a sans headline). Emphasize with italic or bold of the same family.
 - **Oversized shouting H1s.** Control hierarchy with weight and color, not just scale. Display tracking stops around -0.04em; -0.02 to -0.03em usually reads better. Details in `typography.md`.
 - **Beige + brass/clay/oxblood + espresso** for premium-consumer briefs (cream grounds like `#f5f1ea`, brass `#b08947`, warm near-black `#1a1714`). Rotate to cold luxury (silver/chrome), forest + bone + amber, black + tan, cobalt + one neutral, terracotta + slate, or monochrome + one saturated accent, and do not reuse last project's family.
 - **Gray text on a colored ground.** Tint secondary text from that background hue.
+- **Purple on black** (violet/indigo accent on near-black) as the "tech" look. Pick the accent from the product's world.
+- **Rainbow coloring:** a different hue per card, badge or section. One accent, locked page-wide (above).
+- **Basic pastel palettes** (Tailwind `-100`/`-200` fills, mint, lavender, peach) as a free choice. Pastels need a reason (kids, wellness, a brand) and one deep anchor color.
 - **System display faces** (Impact, Arial Black) as an own-world display voice. Source a face whose character matches.
 
 ### Content tells
@@ -127,6 +137,9 @@ These are defaults, not laws: a brief can earn any of them. Reaching for one whi
 - **Logo walls with category labels under each logo.** Logos only, real SVG marks (Simple Icons), placed below the hero, not inside it. Invented brands get an invented simple monogram, not a plain-text wordmark.
 - **Quotes over three lines,** name-only attribution, straight ASCII quote marks. Attribute name + role (+ company) and use typographic quotes.
 - **Two CTAs with the same intent** ("Get in touch", "Let's talk", "Contact us"). One label per intent, used everywhere. Labels fit one line at desktop.
+- **"It's not X, it's Y"** and other contrast-framing ("Not just a tool. A partner."). State what it is. Copy rules: `copy.md`.
+- **Fake testimonials:** invented quotes, stock headshots, "Sarah, Marketing Lead". Use real quotes with permission or a labeled placeholder slot; never ship invented social proof.
+- **Missing legal pages:** footer links to Privacy and Terms that 404 or don't exist. Any page that collects data, sells, or has sign-up ships real Privacy Policy and Terms pages (or labeled placeholders the user must fill before launch).
 - **Copy that sounds thoughtful but means nothing.** Re-read every visible string before shipping; if a phrase has no clear referent or is cute-but-wrong, replace it with a plain functional sentence.
 
 ## Redesign protocol

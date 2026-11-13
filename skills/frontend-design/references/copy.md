@@ -155,6 +155,7 @@ Product writing: labels, buttons, errors, empty/loading/success text, links, ton
 - "Scroll to explore" cues, version/BETA stamps as hero eyebrows (unless the brief is a launch), `01 / 4` counters on tiles.
 - Eyebrows above every section: at most one in three sections, otherwise drop them.
 - Placeholder people and brands ("John Doe", "Acme", "Nexus", "SmartFlow"). Use plausible, locale-appropriate names.
+- "It's not X, it's Y" / "Not just X. Y." contrast-framing. Say what the thing is.
 - Em dashes as a stylistic crutch (choose: comma, colon, period, parentheses). Proper ranges with en dash: `typography.md`.
 - Industry captions under logos in a logo wall; logos stand alone.
 
